@@ -1,0 +1,32 @@
+{
+  "produtos": [
+    {
+      "sku": "ZN-PRO-256",
+      "nome": "Smartphone Zenith Pro",
+      "categoria": "Eletronicos",
+      "preco": 2000.0,
+      "estoque": 45
+    },
+    {
+      "sku": "NB-UX1",
+      "nome": "Notebook Ultra X1",
+      "categoria": "Eletronicos",
+      "preco": 3900.0,
+      "estoque": 18
+    },
+    {
+      "sku": "FN-AIRPULSE",
+      "nome": "Fone Bluetooth AirPulse",
+      "categoria": "Acessorios",
+      "preco": 150.0,
+      "estoque": 230
+    },
+    {
+      "sku": "MN-CURVO32",
+      "nome": "Monitor Curvo 32\"",
+      "categoria": "Eletronicos",
+      "preco": 1500.0,
+      "estoque": 32
+    }
+  ]
+}
