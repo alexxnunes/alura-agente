@@ -11,7 +11,9 @@ CHROMA_DIR = os.path.join(BASE_DIR, "data", "chroma")
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENROUTER_MODEL = os.getenv("OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free")
 OPENROUTER_FALLBACK_MODEL = os.getenv("OPENROUTER_FALLBACK_MODEL", "openrouter/free")
-OPENROUTER_SITE_URL = os.getenv("OPENROUTER_SITE_URL", "https://github.com")
+OPENROUTER_SITE_URL = os.getenv(
+    "OPENROUTER_SITE_URL", "https://github.com/alexxnunes/alura-agente"
+)
 OPENROUTER_APP_NAME = os.getenv("OPENROUTER_APP_NAME", "alura-agente")
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "paraphrase-multilingual-MiniLM-L12-v2")
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "800"))

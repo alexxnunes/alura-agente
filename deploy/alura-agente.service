@@ -1,0 +1,22 @@
+[Unit]
+Description=Alura Agente - Streamlit RAG
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/opt/alura-agente
+EnvironmentFile=/opt/alura-agente/.env
+Environment=HF_HUB_OFFLINE=1
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/alura-agente/.venv/bin/python -m streamlit run app.py --server.port=8501 --server.address=0.0.0.0 --server.headless=true
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+
+[Install]
+WantedBy=multi-user.target
