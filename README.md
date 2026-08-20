@@ -182,6 +182,6 @@ deploy/                   Serviço systemd e guia de deploy na OCI Compute
 
 O guia completo de implantação está detalhado em [deploy/DEPLOY_OCI.md](deploy/DEPLOY_OCI.md). A aplicação é executada em uma instância **OCI Compute**, com serviço de inicialização contínua via `systemd`.
 
-- URL de Acesso: **pendente de implantação**
-- Captura de Tela: `docs/screenshots/agente_oci.png` — **pendente de implantação**
+- Execução local: `streamlit run app.py` → `http://localhost:8501`
+- Captura de Tela (execução local): `docs/screenshots/agente_oci.png`
 
