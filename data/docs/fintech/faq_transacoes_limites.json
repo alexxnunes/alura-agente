@@ -1,0 +1,21 @@
+{
+  "dominio": "Fintech / Banco Digital",
+  "instituicao": "NovaBank Pagamentos S.A.",
+  "faq_transacoes_limites": [
+    {
+      "id": "FAQ-FIN-01",
+      "pergunta": "Quais são os limites de transferência Pix?",
+      "resposta": "O limite padrão de Pix diurno (das 06h00 às 20h00) é de R$ 5.000,00 por dia. O limite noturno (das 20h00 às 06h00) é de R$ 1.000,00 por determinação de segurança do Banco Central. Solicitações de aumento de limite são avaliadas em até 24 a 48 horas úteis."
+    },
+    {
+      "id": "FAQ-FIN-02",
+      "pergunta": "O Pix ou TED possuem cobrança de tarifas?",
+      "resposta": "Não! Todas as transferências Pix e TED são 100% gratuitas e ilimitadas para pessoas físicas."
+    },
+    {
+      "id": "FAQ-FIN-03",
+      "pergunta": "Como funcionam os saques em dinheiro?",
+      "resposta": "Os saques podem ser realizados em qualquer caixa eletrônico da rede Banco24Horas. Todo cliente possui 4 saques gratuitos por mês. A partir do 5º saque no mesmo mês, é cobrada a tarifa de R$ 6,50 por operação."
+    }
+  ]
+}

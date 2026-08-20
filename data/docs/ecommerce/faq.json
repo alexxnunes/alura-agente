@@ -1,0 +1,26 @@
+{
+  "dominio": "Loja Online / E-commerce",
+  "empresa": "VendaMax Brasil",
+  "perguntas_frequentes": [
+    {
+      "id": "FAQ-EC-01",
+      "pergunta": "Quais são as formas de pagamento aceitas?",
+      "resposta": "Aceitamos Pix com 5% de desconto à vista, cartão de crédito em até 10x sem juros (bandeiras Visa, Mastercard, Elo, Hipercard e American Express) e boleto bancário à vista."
+    },
+    {
+      "id": "FAQ-EC-02",
+      "pergunta": "Existe cupom de desconto para primeira compra?",
+      "resposta": "Sim! Novos clientes podem utilizar o cupom 'BEMVINDO10' no carrinho para obter 10% de desconto em pedidos acima de R$ 100,00."
+    },
+    {
+      "id": "FAQ-EC-03",
+      "pergunta": "Como posso alterar o endereço de entrega do meu pedido?",
+      "resposta": "A alteração de endereço só pode ser feita se a Nota Fiscal ainda não tiver sido emitida. Caso a NF já tenha sido gerada, por normas fiscais não é possível alterar o destino, sendo necessário cancelar e refazer a compra."
+    },
+    {
+      "id": "FAQ-EC-04",
+      "pergunta": "O que fazer se meu pedido atrasar?",
+      "resposta": "Se o prazo de entrega expirou, entre em contato imediatamente com nosso SAC pelo WhatsApp (11) 98765-4321 ou e-mail sac@vendamax.com.br informando o número do pedido. Abriremos um protocolo de urgência com a transportadora."
+    }
+  ]
+}

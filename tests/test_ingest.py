@@ -24,19 +24,32 @@ class KeywordEmbeddings(Embeddings):
 
 def test_load_all_documents_retorna_todos_os_docs():
     docs = ingest.load_all_documents(DOCS_DIR)
-    assert len(docs) >= 6
+    assert len(docs) >= 30
     conteudo_bruto = " ".join(d.page_content for d in docs)
-    assert "FastAPI" in conteudo_bruto
-    assert "Zenith Pro" in conteudo_bruto
+    assert "NovaBank" in conteudo_bruto
+    assert "VendaMax" in conteudo_bruto
+    assert "CloudSync" in conteudo_bruto
+    assert "TransLogística" in conteudo_bruto
+    assert "Vida & Saúde" in conteudo_bruto
+    assert "Alura Tech" in conteudo_bruto
+
+    dominios_encontrados = {d.metadata.get("domain") for d in docs}
+    esperados = {"fintech", "ecommerce", "saas", "logistica", "saude", "educacao"}
+    assert esperados.issubset(dominios_encontrados)
 
 
 def test_build_vectorstore_persiste_e_recupera(tmp_path):
+    docs_dir = tmp_path / "docs"
+    docs_dir.mkdir()
+    (docs_dir / "stack.md").write_text("# Back-end com Python e FastAPI", encoding="utf-8")
+    (docs_dir / "rh.md").write_text("# Benefícios de férias e folgas", encoding="utf-8")
+
     persist = str(tmp_path / "chroma")
-    vs = ingest.build_vectorstore(DOCS_DIR, persist, embedding=KeywordEmbeddings())
+    vs = ingest.build_vectorstore(str(docs_dir), persist, embedding=KeywordEmbeddings())
     assert isinstance(vs, VectorStore)
     assert os.path.isdir(persist)
-    resultados = vs.similarity_search("backend Python FastAPI", k=2)
-    assert resultados[0].metadata["source"] == "stack_tecnologica.md"
+    resultados = vs.similarity_search("backend Python FastAPI", k=1)
+    assert resultados[0].metadata["source"] == "stack.md"
     assert resultados[0].metadata["file_type"] == "md"
 
 

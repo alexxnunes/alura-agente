@@ -1,0 +1,21 @@
+{
+  "dominio": "Clínica de Saúde / Consultório Médico",
+  "clinica": "Clínica Vida & Saúde Integrada",
+  "faq_consultas_agendamentos": [
+    {
+      "id": "FAQ-SAUDE-01",
+      "pergunta": "Qual é o horário de funcionamento da clínica?",
+      "resposta": "A clínica funciona de segunda a sexta-feira, das 07h00 às 21h00, e aos sábados, das 07h30 às 14h00."
+    },
+    {
+      "id": "FAQ-SAUDE-02",
+      "pergunta": "Como funciona o agendamento de telemedicina?",
+      "resposta": "As teleconsultas podem ser agendadas pelo nosso portal ou WhatsApp. O link seguro da videochamada é enviado por e-mail e SMS 30 minutos antes do atendimento. Receitas e atestados possuem assinatura digital com certificado ICP-Brasil."
+    },
+    {
+      "id": "FAQ-SAUDE-03",
+      "pergunta": "Qual é o prazo para retorno de consulta sem custo adicional?",
+      "resposta": "O retorno médico para apresentação de exames solicitados na consulta inicial tem validade de até 21 dias corridos a contar da data do atendimento original."
+    }
+  ]
+}

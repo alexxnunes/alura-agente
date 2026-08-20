@@ -1,0 +1,26 @@
+{
+  "dominio": "SaaS / Plataforma Digital",
+  "produto": "CloudSync Pro",
+  "faq_suporte": [
+    {
+      "id": "FAQ-SAAS-01",
+      "pergunta": "Como redefinir a autenticação em dois fatores (2FA)?",
+      "resposta": "Para redefinir o 2FA, acesse 'Configurações de Perfil' > 'Segurança' e clique em 'Recuperar Chave de Segurança'. Se tiver perdido o acesso ao autenticador, solicite a recuperação ao Administrador do Workspace."
+    },
+    {
+      "id": "FAQ-SAAS-02",
+      "pergunta": "Quais são os níveis de SLA de atendimento por plano?",
+      "resposta": "Plano Starter: até 24 horas úteis por e-mail; Plano Pro: até 4 horas úteis via chat e e-mail; Plano Enterprise: até 1 hora de resposta 24/7 com gerente técnico de contas dedicado."
+    },
+    {
+      "id": "FAQ-SAAS-03",
+      "pergunta": "Como exportar relatórios de execução de pipelines?",
+      "resposta": "No menu 'Analytics', selecione o período desejado e clique no botão 'Exportar' no canto superior direito. Os dados podem ser baixados nos formatos CSV, JSON ou PDF."
+    },
+    {
+      "id": "FAQ-SAAS-04",
+      "pergunta": "Qual é a garantia de disponibilidade (Uptime) do sistema?",
+      "resposta": "Oferecemos garantia de 99.9% de uptime para clientes Pro e 99.95% para clientes Enterprise, monitorado publicamente na página de status (status.cloudsyncpro.io)."
+    }
+  ]
+}

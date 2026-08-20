@@ -19,7 +19,13 @@ def _ler_docx(caminho: str) -> str:
     from docx import Document
 
     doc = Document(caminho)
-    return "\n".join(p.text for p in doc.paragraphs if p.text.strip())
+    linhas = [p.text for p in doc.paragraphs if p.text.strip()]
+    for table in doc.tables:
+        for row in table.rows:
+            linha_tabela = " | ".join(cell.text.strip() for cell in row.cells if cell.text.strip())
+            if linha_tabela:
+                linhas.append(linha_tabela)
+    return "\n".join(linhas)
 
 
 def _ler_pptx(caminho: str) -> str:
@@ -27,13 +33,19 @@ def _ler_pptx(caminho: str) -> str:
 
     prs = Presentation(caminho)
     blocos = []
-    for slide in prs.slides:
+    for i, slide in enumerate(prs.slides, 1):
+        blocos.append(f"--- Slide {i} ---")
         for shape in slide.shapes:
             if shape.has_text_frame:
                 for par in shape.text_frame.paragraphs:
                     texto = "".join(run.text for run in par.runs)
                     if texto.strip():
                         blocos.append(texto)
+            elif shape.has_table:
+                for row in shape.table.rows:
+                    linha = " | ".join(cell.text.strip() for cell in row.cells if cell.text.strip())
+                    if linha:
+                        blocos.append(linha)
     return "\n".join(blocos)
 
 

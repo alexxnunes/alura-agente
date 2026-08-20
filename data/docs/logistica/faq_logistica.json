@@ -1,0 +1,21 @@
+{
+  "dominio": "Empresa de Logística / Envios",
+  "empresa": "TransLogística Express",
+  "perguntas_frequentes": [
+    {
+      "id": "FAQ-LOG-01",
+      "pergunta": "Quantas tentativas de entrega são realizadas?",
+      "resposta": "Realizamos 3 (três) tentativas de entrega em dias consecutivos. Se não houver sucesso, o pacote aguarda retirada na filial mais próxima por 5 dias antes de iniciar o processo de devolução ao remetente."
+    },
+    {
+      "id": "FAQ-LOG-02",
+      "pergunta": "Posso alterar o endereço após a carga sair para entrega?",
+      "resposta": "Não é possível alterar o endereço de um pacote já em rota de entrega no mesmo dia. A solicitação de redirecionamento deve ser feita pelo remetente antes da saída do centro de distribuição."
+    },
+    {
+      "id": "FAQ-LOG-03",
+      "pergunta": "Como comprovar que o pacote foi entregue?",
+      "resposta": "Nosso motorista colhe a assinatura digital, documento (RG/CPF) do recebedor e foto da fachada/comprovante geolocalizado, disponíveis para consulta no link do rastreador."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "dominio": "Plataforma Educativa / Escola Online",
+  "instituicao": "Alura Tech Academy",
+  "faq_cursos_certificados": [
+    {
+      "id": "FAQ-EDU-01",
+      "pergunta": "Os certificados são reconhecidos e válidos para horas complementares?",
+      "resposta": "Sim! Nossos certificados são emitidos em conformidade com a legislação de Cursos Livres (Lei nº 9.394/96) e possuem carga horária descrita e autenticação por QR Code, aceitos como atividades complementares universitárias."
+    },
+    {
+      "id": "FAQ-EDU-02",
+      "pergunta": "Por quanto tempo tenho acesso aos cursos?",
+      "resposta": "O plano anual garante 12 meses de acesso ilimitado com todas as atualizações de conteúdo incluídas. Cursos individuais avulsos possuem acesso vitalício."
+    },
+    {
+      "id": "FAQ-EDU-03",
+      "pergunta": "Como tirar dúvidas com os professores?",
+      "resposta": "Você pode postar sua dúvida diretamente no fórum abaixo de cada aula. Nossa equipe pedagógica e instrutores respondem em um tempo médio inferior a 4 horas úteis."
+    }
+  ]
+}

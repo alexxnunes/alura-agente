@@ -70,3 +70,34 @@ def test_extensao_desconhecida_levanta_erro(tmp_path):
         assert ".txt" in str(exc)
     else:
         raise AssertionError("deveria levantar ValueError")
+
+
+def test_carrega_documentos_dos_segmentos():
+    # Fintech
+    texto_fin_pdf = load_document(os.path.join(DOCS, "fintech", "privacidade_protecao_dados.pdf"))
+    assert "Sigilo Bancario" in texto_fin_pdf or "LGPD" in texto_fin_pdf
+    texto_fin_xlsx = load_document(os.path.join(DOCS, "fintech", "tarifas_e_comissoes.xlsx"))
+    assert "Banco24Horas" in texto_fin_xlsx
+
+    # SaaS
+    texto_saas_md = load_document(os.path.join(DOCS, "saas", "base_conhecimento.md"))
+    assert "CloudSync" in texto_saas_md
+    texto_saas_docx = load_document(os.path.join(DOCS, "saas", "politica_privacidade.docx"))
+    assert "TLS 1.3" in texto_saas_docx
+
+    # E-commerce
+    texto_ec_docx = load_document(os.path.join(DOCS, "ecommerce", "guia_envios_entregas.docx"))
+    assert "Sedex" in texto_ec_docx
+
+    # Logistica
+    texto_log_md = load_document(os.path.join(DOCS, "logistica", "rastreamento_pedidos.md"))
+    assert "TransLogística" in texto_log_md
+
+    # Saúde
+    texto_saude_xlsx = load_document(os.path.join(DOCS, "saude", "convenios_coberturas.xlsx"))
+    assert "Unimed" in texto_saude_xlsx
+
+    # Educação
+    texto_edu_csv = load_document(os.path.join(DOCS, "educacao", "programa_bolsas_afiliados.csv"))
+    assert "Bolsa Mérito" in texto_edu_csv
+

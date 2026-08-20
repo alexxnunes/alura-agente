@@ -58,12 +58,16 @@ def load_all_documents(docs_dir: str) -> list[Document]:
             continue
         if texto.strip():
             relativo = os.path.relpath(caminho, docs_dir).replace(os.sep, "/")
+            partes = relativo.split("/")
+            dominio = partes[0] if len(partes) > 1 else "geral"
             documentos.append(
                 Document(
                     page_content=texto,
                     metadata={
                         "source": relativo,
                         "file_type": os.path.splitext(nome)[1].lower().lstrip("."),
+                        "domain": dominio,
+                        "filename": nome,
                     },
                 )
             )
